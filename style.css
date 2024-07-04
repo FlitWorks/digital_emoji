@@ -1,68 +1,138 @@
-body {
-    background-color: #EDF9FF;
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-container {
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #EDF9FF;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 1rem;
 }
 
-.nav-logo {
-    font-size: 1.5em;
-    font-weight: bold;
+.logo {
+    margin-left: 4rem;
 }
 
-.nav-links {
+.logo img {
+    width: 150px;
+}
+
+nav {
+    margin-right: 6rem;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.nav-link {
-    margin-right: 20px;
-    color: #5C1F5B;
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #5C1F5B;
 }
 
-.nav-link:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
+.intro {
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #fff;
-        padding: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
 
-    .nav-links.active {
-        display: flex;
-    }
+#head1 {
+    color: #263B7E;
+}
 
-    .nav-link {
-        margin: 10px 0;
-        text-align: center;
-    }
+#head2 {
+    color: #5C1F5B;
+}
 
-    .menu-icon {
-        display: block;
-    }
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stats div {
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.digital-marketing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.digital-marketing img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.digital-marketing figcaption {
+    text-align: center;
+    padding: 10px;
+    text-wrap: wrap;
+    max-width: 60%;
+}
+
+.clients {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.clients h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#cl1 {
+    color: #263B7E;
+}
+
+#cl2 {
+    color: #5C1F5B;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.client-logos img {
+    width: 100px;
+    height: auto;
 }
